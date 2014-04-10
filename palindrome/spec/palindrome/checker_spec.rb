@@ -3,7 +3,7 @@ require 'spec_helper'
 module Palindrome
   describe Checker do
     describe "#normalize" do
-      it "returns lowercase version of candidate" do
+      it "sets all letters in candidate to lowercase" do
 	expect(Checker.normalize('AA')).to eq('aa')
       end
 
