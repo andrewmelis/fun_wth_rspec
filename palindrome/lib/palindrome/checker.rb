@@ -4,9 +4,12 @@ module Palindrome
       candidate.downcase.gsub(/[^a-z]/, '')
     end
 
-    #O(n) where n=number of letters in candidate
-    def self.is_palindrome?(candidate)
+    def self.palindrome?(candidate)
       candidate = normalize(candidate)
+      candidate == candidate.reverse
+    end
+
+    def self.overly_complex_palindrome_check(candidate)
       0.upto(candidate.size/2) { |front, back = (last_index(candidate)-front)| return false if candidate[front] != candidate[back] }
     end
 
