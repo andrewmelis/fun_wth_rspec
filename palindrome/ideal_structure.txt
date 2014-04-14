@@ -1,6 +1,0 @@
-palindrome
-|-lib
-|---palindrome.rb
-|-spec
-|---spec_helper.rb
-|---palindrome_spec.rb
