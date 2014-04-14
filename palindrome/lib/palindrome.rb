@@ -1,4 +1,4 @@
-class Palindrome
+class String
   def self.normalize(candidate)
     candidate.downcase.gsub(/[^a-z]/, '')
   end
